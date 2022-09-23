@@ -1,0 +1,64 @@
+.cuadro1,
+.cuadro2,
+.cuadro3,
+.cuadro4{
+    width: 300px;
+    height: 300px;
+    background-color: #f0dff2;
+    color: white;
+}
+.cuadro2{
+    background-color: #c3909c;
+}
+
+.cuadro3{
+    background-color: #eaccca;
+}
+
+.cuadro4{
+    background-color: #f1d2d4;
+    }
+    .contenedor{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    /* Medidas Celulares en vertical */
+    @media (max-width: 576px){
+        .contenedor{
+            width: 100%;
+            height: auto;
+            background-color: gray;
+            display: flex;
+             flex-direction: column-reverse;
+        }
+    }
+    /*
+       Medidas Celulares en Horizontal 
+       y tables
+    */
+    @media (min-width: 577px) and (max-width:1024px) {
+        .contenedor{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    }
+    /*
+        Medidas Computadores portatiles
+    */ 
+    @media (min-width: 1025px) and (max-width:1200px){
+        .contenedor{
+            width: 80%;
+            margin: 0 auto;
+            
+     }
+     .cuadro1,
+     .cuadro2,
+     .cuadro3,
+     .cuadro4{
+      border-radius: 50%;
+    }
+
+}
